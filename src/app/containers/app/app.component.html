@@ -1,0 +1,5 @@
+<main class="container">
+  <h1 class="visuallyHidden">{{title}}</h1>
+  <donate-banner [balance]="balance"></donate-banner>
+  <donate-form [donors]="donors" [progress]="progress" (submit)="submit($event)" (save)="save($event)"></donate-form>
+</main>
