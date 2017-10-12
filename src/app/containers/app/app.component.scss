@@ -6,5 +6,20 @@
     margin: 0 auto;
     padding-top: 25px;
     width: 300px;
+
+    .github {
+      color: $brand-dark;
+      display: block;
+      font-size: 0.85rem;
+      margin-top: 35px;
+      text-align: center;
+      text-decoration: none;
+
+      img {
+        height: 20px;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+    }
   }
 }
