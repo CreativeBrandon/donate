@@ -1,2 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~normalize.css/normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+// vars
+$brand: #eb6614;
+$brand-default: #666;
+$brand-secondary: #fafafa;
+$brand-dark: #444;
+$btn-disabled: #CCC;
+$btn-primary: #0ebd32;
+$link-default: #3498db;
+
+// defaults
+.arrow-down {
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid $brand-dark;
+  height: 0;
+  width: 0;
+}
+
+.btn {
+  background-color: $brand-secondary;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+  height: 36px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.highlight {
+  color: $brand;
+  font-weight: bolder;
+}
+
+.visuallyHidden,
+span[aria-hidden] {
+  display: none;
+}

@@ -1,5 +1,10 @@
-.container {
+@import "~styles.scss";
+:host {
+  .container {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.95rem;
     margin: 0 auto;
+    padding-top: 25px;
     width: 300px;
+  }
 }

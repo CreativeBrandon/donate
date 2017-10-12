@@ -1,0 +1,97 @@
+@import "~styles.scss";
+:host {
+  a,
+  a:visited,
+  a:active {
+    color: $link-default;
+    font-size: 0.85rem;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  button[type=submit] {
+    background-color: $btn-primary;
+    border: none;
+    color: #FFF;
+    height: 50px;
+    &:disabled {
+      background-color: $btn-disabled;
+      cursor: unset;
+      opacity: 0.5;
+    }
+  }
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    .btn {
+      width: 47%;
+    }
+  }
+
+  .details {
+    border: solid thin #CCC;
+    border-top: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    line-height: 1.3rem;
+    margin-bottom: 15px;
+    padding: 20px;
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    position: relative;
+
+    .btn {
+      width: 47%;
+    }
+
+    .icon{
+        position: absolute;
+        font-size: 1.5rem;
+        left: 7px;
+        top: 13px;
+    }
+
+    .form-control {
+      border: solid thin #CCC;
+      border-radius: 3px;
+      font-size: 1.3rem;
+      font-weight: bolder;
+      padding: 10px 25px;
+      width: 26%;
+
+      &:before {
+        content: "$testing";
+        display: block;
+        position: absolute;
+        width: 10px;
+      }
+    }
+  }
+
+  progress {
+    background-color: $brand-secondary;
+    display: flex;
+    height: 12px;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  progress::-webkit-progress-bar {
+    background-color: $brand-secondary;
+    border: solid thin #CCC;
+    height: 12px;
+  }
+  progress::-webkit-progress-value {
+    background-color: $brand;
+  }
+  progress::-moz-progress-bar {
+    background-color: $brand-secondary;
+    border: solid thin #CCC;
+    height: 12px;
+  }
+}

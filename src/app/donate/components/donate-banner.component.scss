@@ -1,0 +1,21 @@
+@import "~styles.scss";
+
+:host {
+  .banner {
+    color: #FFF;
+    background-color: $brand-dark;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    padding: 12px 0;
+    position: relative;
+    text-align: center;
+    
+    &:after {
+        content: "";
+        bottom: -8px;
+        position: absolute;
+        right: 39px;
+        @extend .arrow-down;
+    }
+  }
+}

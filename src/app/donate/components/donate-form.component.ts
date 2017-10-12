@@ -4,7 +4,8 @@ import { Progress } from '../../shared/utils';
 
 @Component({
     selector: 'donate-form',
-    templateUrl: './donate-form.component.html'
+    templateUrl: './donate-form.component.html',
+    styleUrls: ['./donate-form.component.scss']
 })
 export class DonateFormComponent {
     @Input() donors: number;

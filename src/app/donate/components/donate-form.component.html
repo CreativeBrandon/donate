@@ -1,15 +1,17 @@
-<form (ngSubmit)="onSubmit(amount.value)" #donateForm="ngForm">
+<form class="donateForm" (ngSubmit)="onSubmit(amount.value)" #donateForm="ngForm">
 
-  <progress value="{{progress.raised}}" max="{{progress.goal}}"></progress>
+  <progress class="progress" value="{{progress.raised}}" max="{{progress.goal}}"></progress>
 
-  <donate-details [donors]="donors"></donate-details>
+  <div class="details">
+    <p><span class="highlight">Only 3 days left</span> to fund this project.</p>
+    <p>Join the {{ donors}} other donors who have already supported this project. Every dollar helps.</p>
 
-  <div class="form-group">
-    <label for="amount" class="visuallyHidden">Amount</label>
-
-    <input type="text" class="form-control" id="amount" required [(ngModel)]="model.amount" name="amount" #amount="ngModel" #spy>
-    <span aria-hidden="true">*</span>
-    <button type="submit" class="btn" [disabled]="!donateForm.form.valid">Give Now</button>
+    <div class="form-group">
+      <label for="amount" class="visuallyHidden">Amount</label>
+      <i class="icon">$</i>
+      <input type="text" class="form-control" id="amount" required [(ngModel)]="model.amount" name="amount" #amount="ngModel">
+      <button type="submit" class="btn" [disabled]="!donateForm.form.valid">Give Now</button>
+    </div>
     <a href="#">Why you should donate</a>
   </div>
 

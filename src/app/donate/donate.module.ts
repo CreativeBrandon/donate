@@ -4,11 +4,10 @@ import { FormsModule }   from '@angular/forms';
 
 import {
   DonateBannerComponent,
-  DonateDetailsComponent,
   DonateFormComponent
 } from './components';
 
-const COMPONENTS = [DonateBannerComponent, DonateDetailsComponent, DonateFormComponent]
+const COMPONENTS = [DonateBannerComponent, DonateFormComponent]
 
 @NgModule({
   imports: [
